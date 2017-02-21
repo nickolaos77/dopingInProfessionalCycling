@@ -46,6 +46,7 @@
                    .attr("cx" , (d, i) => xScale(formatTime( (d.Time) ) )  )
                    .attr("cy" , (d, i) => yScale(i+1))
                    .attr("r", 5.5)
+                   .attr("class","circle")
                    .attr("fill", (d,i)=> d.Doping ? "red" : "green"   )
                    .on('mouseover', (element)=> {
                     let nameCountry = element.Name + ' : ' + element.Nationality;
